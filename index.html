@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app = "fyp">
   <head>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,7 +14,7 @@
     <body ng-controller="homeCtrl">
       <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#"> <img class="logo" src="" height="40"> LOGO</a>
+          <a class="navbar-brand" href="#"> <i class="fas fa-hospital"></i></a>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a class="nav-link" href="index.html"> Home </a></li>
               <li class="nav-item"><a class="nav-link" href=""> Pathways </a></li>
@@ -43,7 +44,7 @@
         </thead>
         <tbody>
         <tr ng-repeat="condition in conditions">
-          <td><a style="text-decoration:none" href ="{{condition}}.html">{{condition}}</a></td>
+          <td><a style="text-decoration:none" href ="{{condition | lowercase}}.html">{{condition}}</a></td>
         </tr>
         </tbody>
       </table>
