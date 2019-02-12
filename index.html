@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app = "fyp">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript"src="js/home.controller.js"></script>
+  </head>
+    <body ng-controller="homeCtrl">
+      <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#"> <img class="logo" src="" height="40"> LOGO</a>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html"> Home </a></li>
+              <li class="nav-item"><a class="nav-link" href=""> Pathways </a></li>
+              <li class="nav-item"><a class="nav-link" href=""> About </a></li>
+              <li class="nav-item"><a class="nav-link" href=""> Contact </a></li>
+            </ul>
+            <div class="col-sm-3 col-md-3">
+              <form class="navbar-form" role="search">
+              <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="q">
+                  <div class="input-group-btn">
+                      <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                  </div>
+              </div>
+              </form>
+          </div>
+        </nav>
+      </div>
+      <div id = "conditions">
+      <table st-safe-src="objectDataArr[0]" st-table="" class="table table-striped">
+        <thead>
+        <tr>
+          <th>Condition</th>
+        </tr>
+        <tr>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="condition in conditions">
+          <td><a style="text-decoration:none" href ="{{condition}}.html">{{condition}}</a></td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+    </body>   
+    </html>
