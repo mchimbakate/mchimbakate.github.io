@@ -1,30 +1,46 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <script src="getxml.js"></script>
-    <script src="getorgchart/getorgchart.js"></script>
-    <link href="getorgchart/getorgchart.css" rel="stylesheet" />
+<html lang="en" >
 
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS FlowChart</title>
+ <link rel="stylesheet" href="/css/index.css">
+ <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+<script src = "data.js"  ></script>
+</head>
+
 <body onload="getXML()">
-        <div id = "conditions"></div>
-        <div style="float: right; width: 10%; height:100%; text-align:center; display: none;" ></div>
-<table id="orgChartData" >
-    <tr>
-        <th>title</th>
-        </tr>
-        <tr>
-            <!-- <script type="text/javascript">
-                var conditionsElement = document.getElementById("conditions");
-                var orgChart = new getOrgChart(conditionsElement, {
-                    theme: "deborah",                
-                    linkType: "B",
-                    primaryFields:  "title",
-                    enableGridView: true,
-                    dataSource: document.getElementById("orgChartData")
-                });
-    
-        </script> -->
-        </body>
+
+ <div id="container">
+
+  <div id="no1"><a href="">Person With Suspected Asthma</a></div>
+  <div id="line1"></div>
+  <div id="line2"></div>
+  <div id="line3"></div>
+  <div id="line4"></div>
+  <div id="line5"></div>
+  <div id="line6"></div>
+  <div id="no2"><a href="#">Sales &amp; Marketing Director</a></div>
+  <div id="no3"><a href="#">Production Director</a></div>
+  <div id="no4"><a href="#">Human Resources Director</a></div>
+  <div id="no5"><a href="#">Finance Director</a></div>
+  <div id="line7"></div>
+  <div id="line7"></div>
+  <div class="clear"></div>
+  <div id="no6"><a href="#">Factory Manager</a></div>
+  <div id="line9"></div>
+  <div id="line10"></div>
+
+
+  <div class="clear"></div>
+ 
+
+
+</div>
+  
+  
+
+</body>
+
 </html>
