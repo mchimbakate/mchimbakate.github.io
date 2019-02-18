@@ -22,7 +22,7 @@ function getXML() {
 var mainNodes;
   mainNodes = txt.split(",");
   var num = 0;
-  for(i=1;i<10;i++){
+  for(i=1;i<=10;i++){
     
       document.getElementById('no'+i).innerHTML=mainNodes[num];
       num++;
