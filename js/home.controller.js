@@ -509,5 +509,7 @@ app.controller('homeCtrl',['$scope','$filter',function(scope,filter){
     'Vomiting and diarrhoea in children'
 ];
 
+scope.predicates = ['conditions'];
+    scope.selectedPredicate = scope.predicates[0];
 }]);
 

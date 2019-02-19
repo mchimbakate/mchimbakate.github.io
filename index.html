@@ -36,9 +36,13 @@
       <table st-safe-src="objectDataArr[0]" st-table="" class="table table-striped">
         <thead>
         <tr>
-          <th>Condition</th>
+          <th>Conditions</th>
         </tr>
         <tr>
+            <th>
+                <input st-search="firstName" placeholder="search for condition" class="input-sm form-control" type="search"/>
+              </th>
+              
         </tr>
         </thead>
         <tbody>
@@ -46,6 +50,13 @@
           <td><a style="text-decoration:none" href ="{{condition | lowercase}}.html">{{condition}}</a></td>
         </tr>
         </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5" class="text-center">
+              <div st-pagination="" st-items-by-page="itemsByPage" st-displayed-pages="7"></div>
+            </td>
+          </tr>
+        </tfoot>
       </table>
       </div>
     </body>   
