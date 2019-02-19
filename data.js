@@ -3,13 +3,14 @@ function getXML() {
   xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
    if (this.readyState == 4 && this.status == 200) {
-    myFunction(this);
+    getNodes(this);
+    // getText(this);
    }
   };
   xhttp.open("GET", "asthma.xml", true);
   xhttp.send();
  
-  function myFunction(xml) {
+  function getNodes(xml) {
    var x, i, txt, xmlDoc;
    xmlDoc = xml.responseXML;
    txt = "";
@@ -28,8 +29,17 @@ var mainNodes;
       num++;
      
   }
- console.log(mainNodes);
+//  console.log(mainNodes);
 
- 
+// function getText(xml) {
+//   var x, i, txt, xmlDoc;
+//   xmlDoc = xml.responseXML;
+//   txt = "";
+//   x = xmlDoc.getElementsByTagName("title");
+
+//   for (i = 0; i < x.length; i++) {
+//    txt += x[i].childNodes[0].nodeValue + ",";
+   
+//   }
   }} 
  
