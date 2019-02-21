@@ -216,3 +216,6 @@ h1 {
 .clear {
     clear:both;
  }
+ .st-selected {
+   background:lightblue;
+ }
