@@ -1,10 +1,6 @@
-'use strict';
-angular.module('smarttabledemo', ['smart-table'])
-.run(function() {
-  console.clear();
-})
-.controller('smarttabledemo', function($scope) {
-  $scope.data =[
+var app = angular.module('fyp',[]);
+app.controller('homeCtrl',['$scope','$filter',function(scope,filter){
+    scope.conditions =[
     'Acute coronary syndromes',
     'Acute coronary syndromes, hyperglycaemia',
     'Acute heart failure',
@@ -513,7 +509,7 @@ angular.module('smarttabledemo', ['smart-table'])
     'Vomiting and diarrhoea in children'
 ];
 
+// scope.predicates = ['conditions'];
+//     scope.selectedPredicate = scope.predicates[0];
+}]);
 
-
-})
-;
