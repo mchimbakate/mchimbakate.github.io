@@ -4,10 +4,10 @@ function getXML() {
   xhttp.onreadystatechange = function() {
    if (this.readyState == 4 && this.status == 200) {
     getNodes(this);
-    // getText(this);
+    getInfo(this);
    }
   };
-  xhttp.open("GET", "asthma.xml", true);
+  xhttp.open("GET", "https://pathways.nice.org.uk/pathways/asthma/asthma-overview.xml", true);
   xhttp.send();
  
   function getNodes(xml) {
@@ -28,18 +28,15 @@ var mainNodes;
       document.getElementById('no'+i).innerHTML=mainNodes[num];
       num++;
      
+  }}
+
+
+ 
   }
-//  console.log(mainNodes);
 
-// function getText(xml) {
-//   var x, i, txt, xmlDoc;
-//   xmlDoc = xml.responseXML;
-//   txt = "";
-//   x = xmlDoc.getElementsByTagName("title");
-
-//   for (i = 0; i < x.length; i++) {
-//    txt += x[i].childNodes[0].nodeValue + ",";
-   
-//   }
-  }} 
+  $(document).ready(function(){
+    $('#showAsthma').click(function() {
+      $('.AsthmaOverview').toggle("linear");
+    });
+});
  

@@ -10,7 +10,7 @@
 <!-- <link rel="stylesheet" href="css/index.css"> -->
 
 </head>
-<body ng-app="App" ng-controller="testController">
+<body ng-app="App" ng-controller="testController" background="https://images.pexels.com/photos/1282308/pexels-photo-1282308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
     <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="#"> <i class="fas fa-hospital"></i> Clinical Pathways</a>
@@ -20,46 +20,40 @@
               <li class="nav-item"><a class="nav-link" href=""> About </a></li>
               <li class="nav-item"><a class="nav-link" href=""> Contact </a></li>
             </ul>
-            <div class="col-sm-3 col-md-3">
-              <form class="navbar-form" role="search">
-              <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search" name="q">
-                  <div class="input-group-btn">
-                      <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
-                  </div>
-              </div>
-              </form>
-          </div>
-        </nav>
-      </div>
-  <div class="container">
 
-		<div ng-show="loading"><h3>Loading...</h3></div>
-		<table st-table="display_records"  st-safe-src="conditions" class="table table-striped">
-			<thead>
+        </nav>
+			</div>
+			<div>
+			</div>
+			<div class="card" style="width: 50%;margin-left: 25%;padding: 2%;background-color:rgba(255, 255, 255, 0.70);height: 90%;" >
+			
+  <div class="container">
+		<table st-table="display_records"  st-safe-src="conditions" class="table table-hover table-light table-borderless">
+			<thead class="thead-dark">
 				<tr>
-					<th>Condition</th>
+					<th><h1>Search for Condition</h1></th>
 
 				</tr>
 				<tr>
 					<th colspan="5">
-						<input st-search placeholder="Filter by condition" class="input-sm form-control" type="search"/>
+						<input st-search placeholder="Search..." class="input-sm form-control" type="search"/>
 					</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr st-select-row="row" st-select-mode="multiple" ng-repeat="row in display_records">
-					<td><a href={{row}}.html>{{row}}</a></td>
+					<td style="text-align: center;"><a href={{row}}.html style="text-decoration: none;color:rgb(1, 79, 81);">{{row}}</a></td>
 				</tr>
 			</tbody>
 			<tfoot>
 				<tr>
-					<td colspan="5" class="text-center">
-						<div st-pagination="" st-items-by-page="itemsByPage"></div>
+					<td colspan="5" class="text-center" style="background:rgba(52, 58, 64, 0.25);">
+						<div st-pagination="" st-items-by-page="15" style="display:inline-block;"></div>
 					</td>
 				</tr>
 			</tfoot>
 		</table>
 	</div>
+</div>
 </body>
 </html>
