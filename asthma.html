@@ -1,43 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" >
-
 <head>
   <meta charset="UTF-8">
   <title>Asthma</title>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+<script src="js/nav.js"></script>
  <link rel="stylesheet" href="/css/index.css">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src = "data.js"  ></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+<script src="getxml.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-</head>
-
-    <body onload="getXML();" background="https://images.pexels.com/photos/1919236/pexels-photo-1919236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-
-    <div class="navigation">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="index.html"> <i class="fas fa-hospital"></i> Clinical Pathways</a>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html"> Home </a></li>
-              <li class="nav-item"><a class="nav-link" href=""> Pathways </a></li>
-              <li class="nav-item"><a class="nav-link" href=""> About </a></li>
-              <li class="nav-item"><a class="nav-link" href="">  </a></li>
-            </ul>
-           
-        </nav>
-      </div>
+    <body onload="getXML()" background="https://images.pexels.com/photos/1919236/pexels-photo-1919236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+<div id= "nav-placeholder"></div>
       <div>
           <br><br><br><br>
       </div>
-      <div class="card" style="width: 70%;margin-left: 15%;padding: 2%;background-color:rgba(255, 255, 255, 0.80);height: 90%;" >
+      <div id="asthma"class="card" style="width: 70%;margin-left: 15%;padding: 2%;background-color:rgba(255, 255, 255, 0.80);height: 90%;" >
 
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" height="341px" viewBox="-0.5 -0.5 771 341" style="background-color: rgb(255, 255,255,0);">
         <defs/>
@@ -55,7 +40,7 @@
                  <text x="78" y="18" fill="#121212" text-anchor="middle" font-size="11px" font-family="Verdana">Assessment and Diagnosis &lt;br&gt;in person under 17</text>
               </switch>
            </g>
-            <a data-toggle="modal" data-target="#exampleModalCenter"> <rect x="290" y="0" width="220" height="40" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+            <a data-toggle="modal" data-target="#asthmaOverview"> <rect x="290" y="0" width="220" height="40" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
            <g transform="translate(311.5,14.5)">
               <switch>
                  <foreignObject style="overflow:visible;" pointer-events="all" width="176" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
@@ -68,7 +53,8 @@
            </g>
            <path d="M 285 100 L 285 70 L 400 70 L 400 40" fill="none" stroke="#004344" stroke-miterlimit="10" pointer-events="none"/>
            <path d="M 285 140 L 285 170 L 175 170 L 175 200" fill="none" stroke="#004344" stroke-miterlimit="10" pointer-events="none"/>
-           </a><rect x="200" y="100" width="170" height="40" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+           </a>
+           <a data-toggle="modal" data-target="#asthmaOverview"> <rect x="200" y="100" width="170" height="40" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
            <g transform="translate(206.5,107.5)">
               <switch>
                  <foreignObject style="overflow:visible;" pointer-events="all" width="156" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
@@ -80,7 +66,7 @@
               </switch>
            </g>
            <path d="M 485 100 L 485 70 L 400 70 L 400 40" fill="none" stroke="#004344" stroke-miterlimit="10" pointer-events="none"/>
-           <rect x="400" y="100" width="170" height="40" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+           </a><rect x="400" y="100" width="170" height="40" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
            <g transform="translate(439.5,114.5)">
               <switch>
                  <foreignObject style="overflow:visible;" pointer-events="all" width="91" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
@@ -130,7 +116,8 @@
      </svg>
 
       </div>
-<div class="modal fade bs-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <!-- Asthma Overview Modal -->
+<div class="modal fade bs-example-modal-lg" id="asthmaOverview" tabindex="-1" role="dialog" aria-labelledby="asthmaOverviewTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -156,7 +143,33 @@
     </div>
   </div>
 </div>
-
+      <!-- Asthma Overview Modal -->
+      <div class="modal fade bs-example-modal-lg" id="asthmaOverview" tabindex="-1" role="dialog" aria-labelledby="asthmaOverviewTitle" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h3 class="modal-title" id="exampleModalLongTitle">Asthma</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+             </div>
+             <div class="modal-body">
+               <div class="card-body" style="">
+             <p >Asthma is a condition that affects the airways – the small tubes that carry air in and out of the lungs. The airways become over-sensitive, which means that they react to things that would normally not cause a problem, such as cold air or dust.
+       
+               This reaction means that muscles around the wall of the airway tighten up, making it narrow and difficult for the air to flow in and out. The lining of the airways then gets swollen (just like your nose during a cold) and sticky mucus is produced, clogging up the breathing passages.
+               
+             </small></p><p>With the airways narrowed like this, you can see why it becomes difficult for air to move in and out and why the chest has to work so much. Tightening of muscle around the airways can happen quickly and is the most common cause of mild asthma.
+               
+             </p><p>Thankfully, this tightness can be relieved quickly with the right inhaler. However, the swelling and mucus happen more slowly and need a different treatment. They take longer to clear up and are a particular problem in more severe asthmatic cases.</p>
+           </div>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             </div>
+           </div>
+         </div>
+       </div>
 </body>
 
 </html>
