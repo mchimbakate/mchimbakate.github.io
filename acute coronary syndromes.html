@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Asthma</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="getxml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body background="https://images.pexels.com/photos/1919236/pexels-photo-1919236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+    <div id="nav-placeholder"></div>
+    <div>
+        <br><br><br><br></div>
+    <div id="acuteCoronarySyndromes" class="card" style="width: 70%;margin-left: 15%;padding: 2%;background-color:rgba(255, 255, 255, 0.80);height: 90%;">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="941px" height="621px" viewBox="-0.5 -0.5 941 621" content="&lt;mxfile modified=&quot;2019-03-25T01:36:00.784Z&quot; host=&quot;www.draw.io&quot; agent=&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36&quot; etag=&quot;4Uhpe3EzVQPLCoVJ2eQz&quot; version=&quot;10.5.4&quot; type=&quot;browser&quot;&gt;&lt;diagram id=&quot;uX3WjqBLjI8CNC20IA1L&quot; name=&quot;Page-1&quot;&gt;7VrZkto4FP0aHjvlleWR0E2Smk4VU0zWlymBha2MLLkkmWW+fiRbAhsbQ9NsmaZS1bGOpWtZ5+rce2Va7iBefmAgiT7TAOKWYwXLlvvYchzH63ryP4WscsTutjUSMhRobAOM0b9Qg5ZGUxRAXuooKMUCJWVwSgmBU1HCAGN0Ue42o7j81ASEsAKMpwBX0W8oEFGOdn1rg3+EKIzMk21L34mB6awBHoGALgqQ+9RyB4xSkV/FywHEavXMuuTjhjvurifGIBGHDPh7IKajPzvgazD5/vMP8vzF4YsH29WTEyvzxjCQC6CblImIhpQA/LRB3zOakgAqs5Zsbfo8U5pI0JbgLyjESrMJUkElFIkY67twicR3Nfydr1s/tDF1/bgsNlamQQRbFQap5g9jTzU2w7KWGTejRAxBjLACvkIWAAI0PKCYsuylXdtR/7LBQV+5jYQJJTBHhghjbY4LRv+BhZGW5bmepy3qN7bVpKr8aMo4TdkUNpDiaD8HLISioZ/mThFWeIBm/wOkMZQLITswiIFA87JHA70xwnW/je/IC+0+9a70sTO03S8T/3HU6YfOz+fZe04e2rfjSfYeT2qm+PzE2fapmcuGyrcCq0KHhCIieMHySAGyg5Fny88tanF+sLcU5GX95UU+g40PrV/lILdqWtM5wKlehv40FVBJfgS5yJhCpOJ7Zc9aREjAcQIy9hYyVJW9qLqpbW/m283qYTxb2Z9DJpAMGn2MQiKxGAVB5uC7ZOZgsVCW4bLRScxdE2gMOx3dXmzilm2wqBCzPOv1itCkTwXqPpEZZTIyIkrUA0kg/47TJJE7/86g420zaNdQuM4nLkKh7d2Oqp8nP3hdwH9BZnG6/KB3rfzgqCjjdStRoznM+O72NrAuEGd6FbEaCzDB90BTlSlri5/2tQON7V9Fpa6lHMfI4/FqYyrxE8tIZdt33S2dWEc6YyOfqh72IgHpbVnKpbNi6aXSVpmyedBZlcoQUpCqltPGQrlcAqRCtUN1PURZekVTNeGYMqVkYJI1887y4cX+Bp6wbaTYa4ARUQIkjY2AiBZgxXfae/NK2fEPSOjOJpW1VXr3dvK5fVX6Op/z/G4xo7PeWesMb2dSJ1sjyJBcNMgOzPReIZHmZHJv4d85tZa+yhl6v6EzlJJ7a68fXJLy2jW+GuON0y4ep3AOOY9hFtjykhzFMQwQyE5ZYimvIdS36UytTcoTOBVQ9QTmLIYy6QTZi/AVCZicrowDIFaqTiY8uceD7K5djgcmby1Gg25NNOieKxoYd7grwBEK0DlQAU6fQL9OAjoVCXgCDK9q93pKuKmCAQmR3FlGI+RqPoz/UgsFQz0CYjg3Z3vxik4BkyKSzYfMAJvmd+6isCUKD862KNTkiL1LqoJzF4UDRKF+rx+YCN7Wp7tqUiBzZ57t44RBLlcBkTDzSOmQ9/Owfcf26+rtEsf2tYR6FUI/K2nPWawo+ptn0O11Swz2avKyi1bp988ux0uwf6AE925Lgq9zhP2/CLo1jDep4o0w7lc0Oq/Ec5HOk+xHBEJCNVSsu+8avk/D62rrOg33/XPt6N8ojT7Xzjz54deOHyZ55QzMtQ773nPEF5mm1yxs5YaPL7tLY5NfN5fWb36nO+39BbNjXfQYrfpF7hgHcPvZVojABGEkyr+SknXYfF2HzVIpDJCpUkzZoXPApykGCggQh4DDu5s49i5ROIObyObmh9y5qmx+D+8+/Qc=&lt;/diagram&gt;&lt;/mxfile&gt;">
+   <defs/>
+   <g>
+      <path d="M 225 170 L 225 140 L 550 140 L 550 110" fill="none" stroke="#004344" stroke-miterlimit="10" pointer-events="none"/>
+      <path d="M 225 210 L 225 230 L 225 255" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+     <a data-toggle="modal" data-target="#acuteCoronaryOverview"><rect x="140" y="170" width="170" height="40" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+      <g transform="translate(178.5,184.5)">
+         <switch>
+            <foreignObject style="overflow:visible;" pointer-events="all" width="92" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+               <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(18, 18, 18); line-height: 1.2; vertical-align: top; width: 92px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Acute chest pain</div>
+               </div>
+            </foreignObject>
+            <text x="46" y="11" fill="#121212" text-anchor="middle" font-size="11px" font-family="Verdana">Acute chest pain</text>
+         </switch>
+      </g>
+      </a><a data-toggle="modal" data-target="#disclaimer"><rect x="440" y="70" width="220" height="40" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+      <g transform="translate(480.5,84.5)">
+         <switch>
+            <foreignObject style="overflow:visible;" pointer-events="all" width="138" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+               <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(18, 18, 18); line-height: 1.2; vertical-align: top; width: 138px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Information and Support</div>
+               </div>
+            </foreignObject>
+            <text x="69" y="11" fill="#121212" text-anchor="middle" font-size="11px" font-family="Verdana">Information and Support</text>
+         </switch>
+      </g>
+      <path d="M 505 180 L 505 140 L 550 140 L 550 110" fill="none" stroke="#004344" stroke-miterlimit="10" pointer-events="none"/>
+      </a><rect x="420" y="180" width="170" height="40" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+      <g transform="translate(456.5,194.5)">
+         <switch>
+            <foreignObject style="overflow:visible;" pointer-events="all" width="96" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+               <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(18, 18, 18); line-height: 1.2; vertical-align: top; width: 96px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Stable chest pain</div>
+               </div>
+            </foreignObject>
+            <text x="48" y="11" fill="#121212" text-anchor="middle" font-size="11px" font-family="Verdana">Stable chest pain</text>
+         </switch>
+      </g>
+      <path d="M 855 70 L 855 50 L 550 50" fill="none" stroke="#004344" stroke-miterlimit="10" pointer-events="none"/>
+       <a data-toggle="modal" data-target="#moreInfo"><rect x="770" y="70" width="170" height="40" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+      <g transform="translate(798.5,77.5)">
+         <switch>
+            <foreignObject style="overflow:visible;" pointer-events="all" width="112" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+               <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(18, 18, 18); line-height: 1.2; vertical-align: top; width: 114px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span>Find out more about</span><br /><span>Clinical Pathways</span></div>
+               </div>
+            </foreignObject>
+            <text x="56" y="18" fill="#121212" text-anchor="middle" font-size="11px" font-family="Verdana">[Not supported by viewer]</text>
+         </switch>
+      </g>
+      <path d="M 220 335 L 220 363 L 87 363 L 87 394" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+      <path d="M 220 335 L 220 363 L 380 363 L 380 390" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+      </a><a data-toggle="modal" data-target="#assessment"><rect x="130" y="255" width="180" height="80" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+      <g transform="translate(131.5,276.5)">
+         <switch>
+            <foreignObject style="overflow:visible;" pointer-events="all" width="176" height="37" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+               <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(18, 18, 18); line-height: 1.2; vertical-align: top; width: 176px; white-space: normal; overflow-wrap: normal; text-align: center;">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Assessment and immediate management of suspected acute coronary syndrome </div>
+               </div>
+            </foreignObject>
+            <text x="88" y="24" fill="#121212" text-anchor="middle" font-size="11px" font-family="Verdana">Assessment and immediate management of suspected acute coronary syndrome </text>
+         </switch>
+      </g>
+      <path d="M 95 470 L 95 505 L 260 505 L 260 540" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+      </a><a data-toggle="modal" data-target="#management"><rect x="0" y="390" width="190" height="80" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+      <g transform="translate(1.5,411.5)">
+         <switch>
+            <foreignObject style="overflow:visible;" pointer-events="all" width="186" height="37" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+               <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(18, 18, 18); line-height: 1.2; vertical-align: top; width: 186px; white-space: normal; overflow-wrap: normal; text-align: center;">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Early management of unstable angina and non-ST segment elevation myocardial infarction </div>
+               </div>
+            </foreignObject>
+            <text x="93" y="24" fill="#121212" text-anchor="middle" font-size="11px" font-family="Verdana">[Not supported by viewer]</text>
+         </switch>
+      </g>
+      <path d="M 550 40 L 550 70" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+      </a><a data-toggle="modal" data-target="#overview"><rect x="440" y="0" width="220" height="40" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+      <g transform="translate(455.5,14.5)">
+         <switch>
+            <foreignObject style="overflow:visible;" pointer-events="all" width="188" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+               <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(18, 18, 18); line-height: 1.2; vertical-align: top; width: 188px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Person presenting with chest pain</div>
+               </div>
+            </foreignObject>
+            <text x="94" y="11" fill="#121212" text-anchor="middle" font-size="11px" font-family="Verdana">Person presenting with chest pain</text>
+         </switch>
+      </g>
+      </a><a data-toggle="modal" data-target="#managing"><rect x="418" y="335" width="170" height="40" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+      <g transform="translate(437.5,349.5)">
+         <switch>
+            <foreignObject style="overflow:visible;" pointer-events="all" width="130" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+               <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(18, 18, 18); line-height: 1.2; vertical-align: top; width: 132px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Managing stable angina</div>
+               </div>
+            </foreignObject>
+            <text x="65" y="11" fill="#121212" text-anchor="middle" font-size="11px" font-family="Verdana">Managing stable angina</text>
+         </switch>
+      </g>
+      <path d="M 503 255 L 505 255 L 505 220" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+      <path d="M 503 310 L 503 335" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+      </a><a data-toggle="modal" data-target="#acuteCoronaryOverview"><rect x="418" y="255" width="170" height="55" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+      <g transform="translate(419.5,270.5)">
+         <switch>
+            <foreignObject style="overflow:visible;" pointer-events="all" width="166" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+               <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(18, 18, 18); line-height: 1.2; vertical-align: top; width: 166px; white-space: normal; overflow-wrap: normal; text-align: center;">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Assessing and Diagnosing suspected stable angina</div>
+               </div>
+            </foreignObject>
+            <text x="83" y="18" fill="#121212" text-anchor="middle" font-size="11px" font-family="Verdana">Assessing and Diagnosing suspected stable angina</text>
+         </switch>
+      </g>
+      <path d="M 380 470 L 380 505 L 260 505 L 260 540" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+      </a><a data-toggle="modal" data-target="#acuteCoronaryOverview"><rect x="280" y="390" width="200" height="80" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+      <g transform="translate(281.5,411.5)">
+         <switch>
+            <foreignObject style="overflow:visible;" pointer-events="all" width="196" height="37" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+               <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(18, 18, 18); line-height: 1.2; vertical-align: top; width: 196px; white-space: normal; overflow-wrap: normal; text-align: center;">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Find out more about myocardial infarction with non-ST segment elevation</div>
+               </div>
+            </foreignObject>
+            <text x="98" y="24" fill="#121212" text-anchor="middle" font-size="11px" font-family="Verdana">Find out more about myocardial infarction with non-ST segment elevation</text>
+         </switch>
+      </g>
+      </a><a data-toggle="modal" data-target="#acuteCoronaryOverview"><rect x="160" y="540" width="200" height="80" fill="#ffffff" stroke="#014f51" pointer-events="none"/>
+      <g transform="translate(161.5,554.5)">
+         <switch>
+            <foreignObject style="overflow:visible;" pointer-events="all" width="196" height="50" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+               <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(18, 18, 18); line-height: 1.2; vertical-align: top; width: 196px; white-space: normal; overflow-wrap: normal; text-align: center;">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Find out more about myocardial infarction: rehabilitation and preventing further cardiovascular disease</div>
+               </div>
+            </foreignObject>
+            <text x="98" y="31" fill="#121212" text-anchor="middle" font-size="11px" font-family="Verdana">[Not supported by viewer]</text>
+         </switch>
+      </g>
+   </g>
+</svg>
+    </div>
+    <!-- Overview Modal -->
+    <div class="modal fade bs-example-modal-lg" id="overview" tabindex="-1" role="dialog" aria-labelledby="asthmaOverviewTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">Chest Pain information and support</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <p>Chest pain is any sort of pain felt in your upper body, from your shoulders down to your ribs. Although it can be a symptom of many conditions, chest pain must be taken seriously as it could mean you are having a heart attack.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Disclaimer Modal -->
+    <div class="modal fade bs-example-modal-lg" id="disclaimer" tabindex="-1" role="dialog" aria-labelledby="asthmaOverviewTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">Chest Pain information and support</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <strong>** Disclaimer **</strong>
+                        <p></p>This information should not be used to self-diagnose your condition, but should give you an idea of what is causing your chest pain and whether you need to get emergency help or see your GP. It does not include every possible
+                        cause, but describes the most common reasons for chest pain.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- More About Clinical Pathways -->
+    <div class="modal fade bs-example-modal-lg" id="moreInfo" tabindex="-1" role="dialog" aria-labelledby="asthmaOverviewTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">More About Clinical Pathways</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <p> You can read more about the Clincal Pathways service <a href="/about.html">here.</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Assessment -->
+    <div class="modal fade bs-example-modal-lg" id="assessment" tabindex="-1" role="dialog" aria-labelledby="asthmaOverviewTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLongTitle">Assessment and immediate management of suspected acute coronary syndrome</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card-body">
+                                <ul>
+                                    <li>Initial assessment carried out trying to determine whether the chest pain may be cardiac and therefore whether this guidance is relevant, by considering:
+                                            the history of the chest pain, 
+                                            the presence of cardiovascular risk factors, 
+                                            history of ischaemic heart disease and any previous treatment, 
+                                          and previous investigations for chest pain.  </li>
+                                    <li>When an acute coronary syndrome is suspected, start management immediately in the order appropriate to the circumstances and take a resting 12-lead ECG. Take the ECG as soon as possible, but do not delay transfer to hospital.</li>
+                                    <li>If an acute coronary syndrome is not suspected, consider other causes of the chest pain, some of which may be life-threatening. Refer people to hospital as an emergency if they have a recent (confirmed or suspected) acute coronary syndrome and develop further chest pain.</li>
+                                    <li>If an acute coronary syndrome has been excluded at any point in the care pathway, but people have risk factors for cardiovascular disease, follow the appropriate guidance,</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <!-- Early Management -->
+    <div class="modal fade bs-example-modal-lg" id="management" tabindex="-1" role="dialog" aria-labelledby="asthmaOverviewTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLongTitle">Early management of unstable angina and NSTEMI</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-body">
+                            <ul>
+                                <li>Offer patients clear information about the risks and benefits of the treatments offered so that they can make informed choices about management strategies. </li>
+                                <li>Offer aspirin as soon as possible to all patients and continue indefinitely unless contraindicated by bleeding risk or aspirin hypersensitivity.For patients with aspirin hypersensitivity, clopidogrel monotherapy should be considered as an alternative treatment.</li>
+                                <li>Formally assess individual risk of future adverse cardiovascular events using an established risk scoring system that predicts 6-month mortality</li>
+                                <li>Discuss the choice of revascularisation strategy with the patient.</li>
+                                <li>Before discharge offer patients advice and information about:
+                                        their diagnosis and arrangements for follow-up</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Managing -->
+    <div class="modal fade bs-example-modal-lg" id="managing" tabindex="-1" role="dialog" aria-labelledby="asthmaOverviewTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLongTitle">Managing stable angina</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-body">
+                            <ul>
+                                <li>Do not exclude people with stable angina from treatment based on their age alone.</li>
+                                <li>Do not investigate or treat symptoms of stable angina differently in men and women or in different ethnic groups.</li>
+                                <li>Do not offer the following interventions to manage stable angina:
+                                         transcutaneous electrical nerve stimulation, 
+                                        enhanced external counterpulsation, 
+                                         or acupuncture.</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
