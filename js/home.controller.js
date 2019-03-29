@@ -1,7 +1,9 @@
+// Angular Module Declaration
 App = angular.module('App', ['App.controllers', 'smart-table']);
            
 angular.module('App.controllers', []).controller('testController',  ['$scope', '$http', function($scope, $http) {
     $scope.loading = false;
+//List of all the conditions
     $scope.conditions = [
         'Acute coronary syndromes',
         'Acute coronary syndromes, hyperglycaemia',

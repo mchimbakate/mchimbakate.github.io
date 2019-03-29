@@ -1,3 +1,5 @@
+/* CSS Properties for the website */
+
 h1 {
     width:580px;
     font-family:verdana,arial,helvetica,sans-serif;
@@ -19,7 +21,6 @@ h1 {
     background: white;
  }
 
- 
 #container a {
     display:block;
     color:#000;
@@ -43,7 +44,6 @@ h1 {
    display:inline;
    border:1.2px solid #000;
    clear:both;
-   /* margin-left:45px; */
    margin-left:-10%;
    float:left;
    padding:15px;
@@ -70,7 +70,6 @@ h1 {
    padding: 13px;
 }
 #no5 {
-   /* display:inline; */
    border:1.2px solid #000;
    margin-top: 12%;
    margin-left:-11.5%;
@@ -78,7 +77,6 @@ h1 {
    padding: 13px;
 }
 #no6 {
-  /* display:inline;    */
   border:1.2px solid #000;
   margin-left:40%;
   margin-top:-4%;
@@ -86,7 +84,6 @@ h1 {
   padding: 13px;
 }
 #no7 {
-   /* display:inline;    */
    border:1.2px solid #000;
    margin-left:10%;
    margin-top:-4%;
@@ -170,7 +167,6 @@ h1 {
 }
 #line8{
     font-size:0;
-    /* display:inline; */
     width:1px;
     height:30px;
     color:#fff;
