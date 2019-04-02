@@ -1,10 +1,10 @@
 <html>
 
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/Dapino-Medical-Medical-report.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon2.ico">
 
     <!-- Declarations for all the external scripts used in this file -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-smart-table/2.1.8/smart-table.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,9 +17,19 @@
     <script src="js/home.controller.js"></script>
 
 </head>
-
+<div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"> <i class="fas fa-hospital"></i> Clinical Pathways</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html"> Home </a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
+            <li class="nav-item">
+                <a class="nav-link"> </a>
+            </li>
+        </ul>
+    </nav>
+  </div>
 <body ng-app="App" ng-controller="testController" background="https://images.pexels.com/photos/1282308/pexels-photo-1282308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-    <div id="nav-placeholder"></div>
 
     <div class="card" style="width: 50%;margin-left: 25%;padding: 2%;background-color:rgba(255, 255, 255, 0.70);height: 90%;">
 
