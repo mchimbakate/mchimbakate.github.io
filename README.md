@@ -39,6 +39,7 @@ If the link is active, then click on it,
 If the link is not active, the pathway for that condition/procedure has not yet been implemented.
 ```
 The conditions that have been implemented are:
+
     *Asthma
     *Acute Coronary Syndromes
     *Cataracts
