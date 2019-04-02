@@ -20,11 +20,11 @@ For the best experience use a browser on a laptop or desktop
 
 How to get started with the Clinical Pathways project:
 
-Step One: Clone or download the Repo to your machine
+Step One: Clone or download the Repo [https://github.com/mchimbakate/mchimbakate.github.io](https://github.com/mchimbakate/mchimbakate.github.io) to your machine
 
-```
-https://github.com/mchimbakate/mchimbakate.github.io
-```
+
+
+
 
 Step Two: Extract the files to your prefered location on your machine
 
