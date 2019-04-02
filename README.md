@@ -35,9 +35,15 @@ Step Three: Open index.html using a browser of your choice
 
 Use the search bar to search for a condition
 ```
-*If the link is active, then click on it,
-*If the link is not active, the pathway for that condition/procedure has not yet been implemented.
+If the link is active, then click on it,
+If the link is not active, the pathway for that condition/procedure has not yet been implemented.
 ```
+The conditions that have been implemented are:
+    *Asthma
+    *Acute Coronary Syndromes
+    *Cataracts
+    *Age-related macular degeneration
+    *Stroke
 
 After clicking on one of the active links, you will be presented with a flowchart.
 To view more information about a particular section of the flowchart, 
